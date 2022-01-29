@@ -1,0 +1,197 @@
+/* 
+Color Palate
+    Green #b3dee2 / Green Dark #1cd36e
+    Red #ff0a54 / Red Dark #b91043
+    Blue #a2d2ff
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px; 
+  width: 80%;
+  height: auto;
+  padding:0.3rem;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+.title {
+  text-align: center;
+  background: #eee;
+  padding: 15px;
+  border-radius: 4px;
+  color: #ff0a54;
+  font-size: 28px;
+}
+
+.titleLight {
+  font-weight: 300;
+  color: #494949;
+}
+
+.container {
+  font-family: "Courier New", Courier, monospace;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 1.75rem;
+}
+
+.container h2 {
+  color: #0ab0ff;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+#start {
+  border: none;
+  background-color: #ff0a54;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: larger;
+  cursor: pointer;
+}
+
+#start:hover {
+  background-color: #b91043;
+}
+
+.game-container {
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.area {
+  position: relative;
+  width: 14.5rem;
+  height: 14.5rem;
+  margin: 2rem auto 6rem auto;
+  cursor: pointer;
+}
+
+.area:after {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  content: "";
+  background: url("../Image/ankara.png") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%; 
+  
+} 
+
+.area.adana:after {
+  background: url("../Image/adana.png") no-repeat center;
+  background-size: cover;
+}
+.area.ankara:after {
+  background: url("../Image/ankara.png") no-repeat center;
+  background-size: cover;
+}
+.area.antalya:after {
+  background: url("../Image/antalya.png") no-repeat center;
+  background-size: cover;
+}
+.area.bursa:after {
+  background: url("../Image/bursa.png") no-repeat center;
+  background-size: cover;
+}
+.area.erzurum:after {
+  background: url("../Image/erzurum.png") no-repeat center;
+  background-size: cover;
+}
+.area.istanbul:after {
+  background: url("../Image/istanbul.png") no-repeat center;
+  background-size: cover;
+}
+.area.izmir:after {
+  background: url("../Image/izmir.png") no-repeat center;
+  background-size: cover;
+}
+.area.konya:after {
+  background: url("../Image/konya.png") no-repeat center;
+  background-size: cover;
+}
+.area.mersin:after {
+  background: url("../Image/mersin.png") no-repeat center;
+  background-size: cover;
+}
+.area.samsun:after {
+  background: url("../Image/samsun.png") no-repeat center;
+  background-size: cover;
+}
+.area.sivas:after {
+  background: url("../Image/sivas.png") no-repeat center;
+  background-size: cover;
+}
+
+.area:hover {
+  -webkit-box-shadow: 0 6px 6px -6px rgba(61, 61, 61, 0.5);
+  -moz-box-shadow: 0 6px 6px -6px rgba(61, 61, 61, 0.5);
+  box-shadow: 0 6px 6px -6px rgba(61, 61, 61, 0.5);
+}
+
+.baha {
+  top: 0.4rem;
+  left: 0;
+  width: 100%;
+  height: -1rem;
+  position: absolute;
+  background: url("../Image/bahaMini.png") no-repeat center;
+  background-size: contain;
+  transition: all 0.5s ease; 
+}
+
+.baha.success { 
+  top: 1.5rem;
+  left: 0;
+  width: 100%;
+  height: 15rem;
+  position: absolute;
+  background: url("../Image/bahaSuccess.gif") no-repeat center;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+.baha.failed { 
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 15rem;
+  position: absolute;
+  background: url("../Image/bahaFailed.gif") no-repeat center;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+ 
+
+.baha.upstairs {
+  top: -5.5rem;
+}
+
+.message {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.message.failed {
+  color: #ff0a54;
+  font-weight: 700;
+}
+.message.success {
+  color: #1cd36e;
+  font-weight: 700;
+} 
